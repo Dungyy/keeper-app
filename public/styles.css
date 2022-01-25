@@ -5,6 +5,9 @@
   }
   html {
     font-family: "Montserrat", sans-serif;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
   }
   body {
     background: #eee;
@@ -44,6 +47,10 @@
     width: 240px;
     margin: 16px;
     float: left;
+  }
+  .note:hover {
+    background-color: #676FA3;
+    cursor: pointer;
   }
   .note h1 {
     font-size: 1.1em;
