@@ -28,7 +28,8 @@ const Notes = [
         title: "Debugging",
         content:
           "Q. Why did the the pest control switch to programming? A. Because he heard there was Dubugging"
-      }
+      },
+      
   ];
   
   export default Notes;

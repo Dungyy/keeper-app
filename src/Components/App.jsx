@@ -1,23 +1,26 @@
-import React from 'react';
-import Header from './Header.jsx';
-import Note from './Note';
-import Footer from './Footer';
-import Notes from '../Notes'
+import React from "react";
+// import Header from "./Header.jsx";
+import Note from "./Note";
+import Footer from "./Footer";
+import Notes from "../Notes";
+// import Input from "./Input.jsx";
+import Navbar from "./Navbar.jsx";
 
-function App() {
-    return (
+export default function App() {
+  return (
     <div>
-    <Header />
-        {Notes.map(noteInfo => (
-            <Note
-                key={noteInfo.key}
-                title={noteInfo.title}
-                content={noteInfo.content}
-            />
-        ))}
-    <Footer />
+      <Navbar />
+      {/* <Header /> */}
+      {/* <Input /> */}
+      {Notes.map((noteInfo) => (
+        <Note
+          key={noteInfo.key}
+          title={noteInfo.title}
+          content={noteInfo.content}
+        />
+      ))}
+      <Footer />
     </div>
-    )}
+  );
+}
 
-
-export default App
