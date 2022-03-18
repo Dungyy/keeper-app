@@ -1,12 +1,19 @@
 import React from "react";
+import ClearIcon from '@mui/icons-material/Clear';
 
-const Note = (props) => {
+export default function Note(props) {
+
+  function handleClick() {
+    props.onDelete(props.id);
+  }
+
   return (
     <div className="note">
-      <h1 className="noteTitle">{props.title}</h1>
-      <p className="noteText">{props.content}</p>
+      <h1>{props.title}</h1>
+      <p>{props.content}</p>
+      <button onClick={handleClick}>
+        <ClearIcon />
+        </button>
     </div>
   );
-};
-
-export default Note;
+}
